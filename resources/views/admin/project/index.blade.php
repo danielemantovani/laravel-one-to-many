@@ -17,6 +17,7 @@
                     <th scope="col">Id</th>
                     <th scope="col">Titolo</th>
                     <th scope="col">Contenuto</th>
+                    <th scope="col">Tipo</th>
                     <th scope="col">Slug</th>
                     <th class="text-center" scope="col">Azioni</th>
                 </tr>
@@ -27,6 +28,7 @@
                         <th scope="row">{{ $project->id }}</th>
                         <td>{{ $project->title }}</td>
                         <td>{{ $project->content }}</td>
+                        <td>{{$project->type?->technology}}</td>
                         <td>{{ $project->slug }}</td>
                         <td>
                             <div class="d-flex gap-2">
