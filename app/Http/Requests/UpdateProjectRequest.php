@@ -3,7 +3,6 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
 class UpdateProjectRequest extends FormRequest
 {
@@ -24,9 +23,8 @@ class UpdateProjectRequest extends FormRequest
     {
         return [
             'title' => ['required', 'min:5'],
-            'content' => ['required'], 
-            'type_id'=> ['nullable'],
-            'technology' => ['required'],
+            'content' => ['required'],
+            'type_id' => ['nullable'],
         ];
     }
 }
